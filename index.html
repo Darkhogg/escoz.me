@@ -1,0 +1,16 @@
+---
+layout: base
+---
+<div class="topbar">
+  <strong>escoz</strong>.me
+</div>
+
+{% for person in site.data.people %}
+<a href="{{ person.url }}">
+  <div class="person person-{{ person.css }}">
+    <img class="person-avatar" src="{{ person.avatar }}?s=256"/>
+    <h1 class="person-name">{{ person.name }}</h1>
+    <p class="person-description">{{ person.description }}</p>
+  </div>
+</a>
+{% endfor %}
