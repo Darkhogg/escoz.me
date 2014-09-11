@@ -7,3 +7,8 @@ url: "//escoz.me" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
+
+exclude:
+  - LICENSE
+  - README.md
+  - CNAME
